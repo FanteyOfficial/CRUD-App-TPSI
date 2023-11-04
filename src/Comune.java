@@ -1,4 +1,6 @@
-public class Comune {
+import java.io.Serializable;
+
+public class Comune implements Serializable {
     private Classe c;
     private String codiceComune;
     public void setClasse(Classe c) {

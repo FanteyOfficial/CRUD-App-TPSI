@@ -1,4 +1,6 @@
-public class Classe {
+import java.io.Serializable;
+
+public class Classe implements Serializable {
     private String nome;
     private String classe;
 

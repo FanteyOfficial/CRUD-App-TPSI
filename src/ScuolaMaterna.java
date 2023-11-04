@@ -5,7 +5,6 @@ public class ScuolaMaterna implements Serializable {
     private String openStreetMapId;
     private String nome;
     private Comune comune;
-    private Classe classe;
     private String provincia;
     private String regione;
     private String annoInserimento;
