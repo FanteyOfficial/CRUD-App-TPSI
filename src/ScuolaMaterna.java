@@ -7,10 +7,28 @@ public class ScuolaMaterna implements Serializable {
     private Comune comune;
     private String provincia;
     private String regione;
-    private String annoInserimento;
+    private int annoInserimento;
     private String dataOraInserimento;
     private String longitudine;
     private String latitudine;
+
+    public ScuolaMaterna() {
+
+    }
+
+    public ScuolaMaterna(String openStreetMapId, String nome, Comune comune,
+                         String provincia, String regione, int annoInserimento,
+                         String dataOraInserimento, String longitudine, String latitudine) {
+        this.openStreetMapId = openStreetMapId;
+        this.nome = nome;
+        this.comune = comune;
+        this.provincia = provincia;
+        this.regione = regione;
+        this.annoInserimento = annoInserimento;
+        this.dataOraInserimento = dataOraInserimento;
+        this.longitudine = longitudine;
+        this.latitudine = latitudine;
+    }
 
     public void setOpenStreetMapId(String s) {
         this.openStreetMapId = s;
@@ -27,7 +45,7 @@ public class ScuolaMaterna implements Serializable {
     public void setRegione(String regione) {
         this.regione = regione;
     }
-    public void setAnnoInserimento(String annoInserimento) {
+    public void setAnnoInserimento(int annoInserimento) {
         this.annoInserimento = annoInserimento;
     }
     public void setDataOraInserimento(String dataOraInserimento) {
@@ -55,7 +73,7 @@ public class ScuolaMaterna implements Serializable {
     public String getRegione() {
         return regione;
     }
-    public String getAnnoInserimento() {
+    public int getAnnoInserimento() {
         return annoInserimento;
     }
     public String getDataOraInserimento() {
