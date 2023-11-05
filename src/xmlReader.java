@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class xmlReader {
     public static void main(String[] args) {
-        // Deserialize the XML data using XMLDecoder
         ArrayList<ScuolaMaterna> scuoleMaterne = new ArrayList<>();
 
         try (XMLDecoder decoder = new XMLDecoder(new FileInputStream("scuoleMaterne.xml"))) {
